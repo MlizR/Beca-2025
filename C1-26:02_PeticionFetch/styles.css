@@ -1,0 +1,29 @@
+body{
+    font-family: "Poppins";
+}
+#container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+#mostrar {
+    padding: 20px;
+    color: white;
+    background-color: #4caf50;
+    font-size: 32px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    
+
+}
+
+.tarjeta {
+    width: 200px;
+    background-color: rgb(157, 214, 169);
+    border: 2px solid;
+    border-radius: 25px ;
+    padding: 20px;
+}
