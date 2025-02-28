@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--Lenguaje-->
+<html lang="en">
+
+<!--head provee información general(metadatos) acerca del documento-->
+<head>
+    <meta charset="UTF-8">
+    <!--El viewport iene que medir lo que mide el dispositivo, La escala inicial es al 100% por defecto (1.0)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de la pestaña del navegador-->
+    <title>Document</title>
+    <!--link especifica la relación entre el docuemnto actual y un recurso externo-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!--Seccion donde esta todo lo visible para el navegador-->
+    <h1>Etiquetas HTML</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <p>Define un parrafo</p>
+    <a href="https://htmlmasters.tech/100-etiquetas-html-pdf-y-su-funcion/" target="_blank">Define un enlace</a> <br>
+    <strong>Texto en negrita</strong> <br>
+    <em>Texto enfatizado</em> <br>
+    <u>Texto subrayado</u> <br>
+    <del>Texto tachado</del> <br>
+    <p>25<sup>Texto sobrescrito</sup> <br></p>
+    <p>25<sub>Texto subíndice</sub> <br></p>
+    <mark>Texto en resaltado</mark> <br>
+    <span>Contenedor en línea</span> <br>
+    <time datetime="2025-02-28 13:00">Define una hora especifica</time>
+
+    <hr> <!--Línea de texto-->
+
+    <h4>Lista desordenada</h4>
+    <ul>
+        <li>Gato</li>
+        <li>Perro</li>
+        <li>Conejo</li>
+    </ul>
+
+    <h4>Lista ordenada</h4>
+    <ol>
+        <li>Caballo</li>
+        <li>Serpiente</li>
+        <li>Ballena</li>
+    </ol>
+
+    <h4>Lista con descripciones</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperTText Markup Language</dd>
+
+        <dt>Etiqueta</dt>
+        <dd>Códigos utilizados para marcar el texto de una página web</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <hr> <!--Línea de texto-->
+
+    <h4>Tablas</h4>
+    <table>
+        <caption>Usuarios</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Iván</td>
+                <td>24</td>
+                <td>México</td>
+            </tr>
+            <tr>
+                <td>Lucía</td>
+                <td>18</td>
+                <td>Peru</td>
+            </tr>
+            <tr>
+                <td>Manuel</td>
+                <td>22</td>
+                <td>Dinamarca</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr> <!--Línea de texto-->
+    <h4>Multimedia</h4>
+    <img src="https://img.freepik.com/vector-gratis/computadora-portatil-icono-isometrico-codigo-programa-desarrollo-software-aplicaciones-programacion-neon-oscuro_39422-971.jpg?t=st=1740760323~exp=1740763923~hmac=4b66dc9eedd8adeb9f3989157d309567d2c7ab5281b4c785f2eedbf4a365c0f7&w=1380" alt="Programación" width="400" height="300">
+    <video src="etiquetas.mp4" width="400" controls></video>
+    <audio src="cry.mp3" controls></audio>
+
+
+
+    <hr> <!--Línea de texto-->
+    <h4>Formularios</h4>
+    <form action="#">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre"> <br>
+        <label for="ap">Apellido</label>
+        <input type="text" id="ap" name="ap"> <br>
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad"> <br>
+        <label for="lang">Lenguaje</label>
+        <select name="lenguajes" id="lang">
+            <option value="js">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="c">C++</option>
+        </select> <br>
+
+        <label for="comment">Comentarios</label> <br>
+        <textarea name="comment" id="comment"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+
+
+      
+
+    </form>
+
+
+
+    
+
+    
+</body>
+</html>
