@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas</title>
+</head>
+<body>
+    <figure>
+        <img src="silueta.jpeg" alt="Imagen de la silueta de un humano" width="200">
+        <figcaption>Imagen representtativa de una figura humana</figcaption>
+    </figure>
+
+    <label for="nivel">Nivel de habilidad</label>
+    <meter id="nivel" min="0" max="1" value="0.7"> </meter>
+    <br><br>
+
+    <label for="predictive">Buscar</label>
+    <input type="text" list="colores" name="colors" id="colors">
+    <datalist id="colores">
+        <option value="rojo"></option>
+        <option value="azul"></option>
+        <option value="verde"></option>
+        <option value="cafe"></option>
+    </datalist>
+    <br><br>
+
+    <template id="template">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nostrum nesciunt voluptate odio molestiae accusamus alias, aspernatur ad aliquam necessitatibus placeat maxime eveniet tempora architecto magni praesentium. Aperiam, sed tenetur!</p>
+    </template>
+
+<script>
+    const template = document.getElementById('template'); 
+    const clone = template.content.cloneNode(true);
+    //Agrega un hijo(nodo) al body
+    document.body.appendChild(clone);
+</script>
+
+
+    
+</body>
+</html>
+
+<!--
+
+prueblas funcionales:
+Pruebas de accesibilidad: wai aria
+Pruebas unitarias: cada modulo debe tenr sus pruebas para saber si funciona correctamnete, el codigo debe estar bien hecho
+tdd: test driven development
+bdd
+
+meter: Representa un valor fraccionario 
+
+datalist: Lista de opciones en las que se van buscar lo que el usuario escriba 
+template: Para poder copiar contenido httml en donde lo necesitemos, Es invinsible y sirve para clonar el contenido de esa etiqeuta
+-->
