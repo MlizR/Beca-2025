@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Agregar producto</title>
+    </head>
+
+    <body>
+        <div class="formulario">
+            <form id="form-add">
+                <label for="product">Nombre del producto</label>
+                <input name="producto" id="product" type="text" required>
+                <br><br>
+    
+                <label for="price">Precio</label>
+                <input type="number" name="precio" id="price" required>
+                <br><br>
+    
+                <label for="description">Descripción</label>
+                <textarea name="descripcion" id="description" required></textarea>
+                <br><br>
+    
+                <label for="availability">Disponibilidad</label>
+                <input type="number" name="disponibilidad" id="availability" required>
+                <br><br>
+    
+                <button type="button" onclick="addProduct()">Agregar producto</button>
+            </form>
+
+        </div>
+        
+
+        <div class="tabla">
+            <table id="table">
+                <caption>Tabla de Productos</caption>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Descripción</th>
+                    <th>Disponibilidad</th>
+                </tr>
+    
+            </table>
+        </div>
+        
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
