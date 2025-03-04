@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewportt" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios HTML</title>
+    <style>
+        label {
+            color: blue;
+        }
+        form{
+            margin-top:2em;
+
+        }
+        /* 
+            * Selector universal
+            Selectopres #id, etiqueta, .class{} 
+            3 formas de incluir estilos
+                <style></style>
+                <link rel="stylesheet" href="styles.css"
+                Atributo style: style
+        */
+    </style>
+  </head>
+  <body>
+    <!--action URL de donde se va hacer request con los datos que estam dertro del form-->
+    <form action="" method="">
+      <!--Label: Referenciar la etiqueta con el input. Idenrifica el input con la etiquetacdentro del formulario-->
+      <label for="acept">Aceptar terminos y condiciones</label>
+      <input type="checkbox" id="acept" />
+      <br />
+
+      <label for="option">Selecciona una de las dos opciones</label>
+      <input type="radio" id="option1" name="option" />A
+      <input type="radio" id="option2" name="option" />B
+      <br />
+
+      <label for=""></label>
+      <textarea name="" id="" minlength="2" maxlength="4"></textarea>
+      <br />
+
+      <!--<input type="button" value="Enviar">-->
+
+      <button>Enviar</button>
+
+      <fieldset>
+        <legend>Información Personal</legend>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required/>
+        <br />
+
+        <label for="age">Edad</label>
+        <input type="number" name="age" id="age" />
+        <br />
+
+        <label for="options">Selecciona tu país de origen</label>
+      <select name="options" id="options">
+        <option selected value="selccionar">Selecciona una opción</option>
+        <option value="Mexico">México</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Dinamarca">Dinamarca</option>
+      </select>
+      <br />
+      </fieldset>
+    </form>
+
+    <video controls width="400">
+        <source src="video.mp4">
+    </video>
+    <audio src="audio.mp3" ></audio>
+    <hr>
+
+    <h3>Etiquetas semanticas</h3>
+
+    <hr>
+
+    <details>
+        <summary>Detalles adicionales</summary>
+        <p>Esto se debe mostrar al darle click a la etiqueta details</p>
+    </details>
+
+    <dialog id="myDialog" open>
+        <p>Esto se debe ocultar al darle clic al boton</p>
+        <button>Cerrar</button>
+    </dialog>
+
+
+
+  </body>
+</html>
+
+<!--Los valores de loa attributtos estan alamcend en el viewport
+El id se utiiliza para identtificar el nodo (hace focus en el input al tocar el label)
+Atributo type: Tipo de input que se va a agregar checkbox, radio, text, 
+$0 Objeto que se selecciono 
+Radio: DSe utiliza cuando se debe de seleccionar entre 2 opciones, si son mas de 2 se utiliza select
+Infromación que el navegador nos da cuando el usuario esta interactuando con la pagina
+Evento por defecto de un formulario es submit 
+name: atributo descriotivo. 
+Fieldset: Ayuda a agrupar elementos que estan relacionados dentro de un formulario legend: Descripción de esa sección (un fieldset )
+iframe: enbeber cosas. (Es unnavegador chiquito)
+Puede ser un riesgo de seguridad el igframe puede conttener codigo malicioso
+datalist: crear una sección 
+details: Acordeon 
+dialog: funciona como un modal (ventana emergente) 
+CSS
+Selectorres
+
+
+-->
