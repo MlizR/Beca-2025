@@ -1,0 +1,113 @@
+body{
+    font-family: Helvetica Neue,sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+.img-header{
+    width: 40px;
+
+}
+
+#search-datalist, #search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+input{
+    width: 400px;
+    border: none;
+    border: 1px solid #aaa6a6;
+    border-radius: 30px;
+    padding: 10px 0 10px 10px;
+    padding-left: 40px;
+    font-size: 16px;
+    box-shadow: 0 0 7px #aaa6a6;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #aaa6a6;  
+    border-radius: 30px 30px 0 0;
+    border-bottom: none;
+}
+input:hover{
+    border: none;
+
+}
+
+.img-lupa{
+    width: 30px;
+    position: relative;
+    top: 35px;
+    left: 10px;
+}
+
+.btn-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-container button{
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 12px;
+}
+.link{
+    text-decoration: none;
+    color: #3c4043;
+}
+
+.btn-container button:hover{
+    border: 1px solid #dadce0;
+    cursor: pointer;
+}
+
+/*Google sin datalist*/
+#list-frutas{
+    width: 400px;
+    box-shadow: 0 0 7px #aaa6a6; 
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+}
+
+#list-frutas li{
+    list-style: none;
+    padding: 5px;
+}
+.buscar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
