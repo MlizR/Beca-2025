@@ -28,8 +28,42 @@
     <template id="template">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nostrum nesciunt voluptate odio molestiae accusamus alias, aspernatur ad aliquam necessitatibus placeat maxime eveniet tempora architecto magni praesentium. Aperiam, sed tenetur!</p>
     </template>
+    <br>
+
+    <label for="predictiveInput">Buscaar sin datalist</label>
+    <br><br>
+    <input id="predictiveInput" type="text">
+    <br><br>
 
 <script>
+    const input = document.querySelector ('#predictiveInput');
+    let texto = '';
+    const listToSearch = ['rojo','azul','verde'];
+    let listaFiltrada =[]; 
+
+    input.addEventListener('input', ({data}) => {
+        texto += data;
+        //Busca en la lista de opciones y si coincide se agrega a la listaFiltrada
+        listaFiltrada = listToSearch.filter((element) => {
+            //Condición que tiene que cumplir el elemento
+            return element === texto || element.includes(texto);
+
+        })
+        console.log(listaFiltrada);
+        // 
+
+        const ol = document.createElement('ol');
+        listaFiltrada.forEach((option) =>{
+            const li = document.createElement('li');
+            li.innerText = option;
+            ol.appendChild(li);
+            document.body.appendChild(ol);
+            
+        })
+
+    });
+
+
     const template = document.getElementById('template'); 
     const clone = template.content.cloneNode(true);
     //Agrega un hijo(nodo) al body
@@ -55,4 +89,7 @@ datalist: Lista de opciones en las que se van buscar lo que el usuario escriba
 template: Para poder copiar contenido httml en donde lo necesitemos, Es invinsible y sirve para clonar el contenido de esa etiqeuta
 
 script: 
+filter: funciòn que ayuda a descrimnar elomentos de un arreglo.
+recibe una funciòn la cual se ejecuta con cada uno de los elmentos de los arreglos para decidir cual va a descriminar
+
 -->
