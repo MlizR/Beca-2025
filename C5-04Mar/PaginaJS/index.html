@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript</title>
+</head>
+<header>
+    <nav>
+        <h1>JavaScript</h1>
+        <ol>
+            <li><a href="https://ed.team/blog/la-historia-completa-de-javascript-el-unico-lenguaje-que-entienden-los-navegadores" target="_blank">Historia</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Documentación</a></li>
+            <li><a href="https://www.youtube.com/watch?time_continue=3&v=04T_Zj0PBOc&embeds_referring_euri=https%3A%2F%2Fwww.hostinger.com%2F&source_ve_path=MjM4NTE" target="_blank">Video</a></li>
+        </ol>
+    </nav>
+
+</header>
+<body>
+    <main>
+        <section class="container_concept">
+            <h3>Definición</h3>
+            <p>JavaScript es un lenguaje de programación que sirve para crear contenidos dinámicos en las páginas web. Crea elementos para mejorar la interacción de los visitantes, como menús desplegables, gráficos animados y colores de fondo dinámicos.</p>
+            <figure>
+                <img src="img/js.jpeg" alt="Imagen que representa js">
+                <figcaption>¿Qué es JavaScript y cómo aprenderlo?</figcaption>
+            </figure>
+        </section>
+       
+        <section class="section-use">
+            <div class="container">
+                <h3>Para que se utiliza</h3>
+                <ul>
+                   
+                    <li>Desarrollar aplicaciones web</li>
+                    <li>Desarrollar contenido interactivo</li>
+                    <li>Contrucción de servidores web</li>
+                    <li>Desarrollo de juegos</li>
+                </ul>
+                <img src="img/codigo.png" alt="Imagen de programación">
+            </div>
+
+                <div class="container">
+                    <h3>Ventajas</h3>
+                    <ul>
+                        <li>Simplicidad</li>
+                        <li>Velocidad</li>
+                        <li>Versatilidad</li>
+                        <li>Gran comunidad activa</li>
+                    </ul>
+                    <img src="./img/alta-velocidad.png" alt="Velocidad">
+
+                </div>
+                <div class="container">
+                    <h3>Desventajas</h3>
+                    <ul>
+                        <li>Incompatibilidad con los navegadores</li>
+                        <li>Seguridad</li>
+                        <li>Depuración</li>
+                        <br>
+                    </ul>
+                    <img src="img/conexion.png" alt="Inseguridad">
+                </div>
+            
+        </section>
+
+        <section class="section-use">
+            <div class="container">
+                <table>
+                    <caption>Tipos de datos</caption>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Definición</th>
+                    </tr>
+                    <tr>
+                        <td>String</td>
+                        <td>Datos textuales escritos entre comillas</td>
+                    </tr>
+                    <tr>
+                        <td>Number</td>
+                        <td>Números enteros y de punto flotante</td>
+                    </tr>
+                    <tr>
+                        <td>Boolean</td>
+                        <td>Datos lógico con valores verdaderos y falsos</td>
+                    </tr>
+                    <tr>
+                        <td>Null</td>
+                        <td>Contiene un valor nulo</td>
+                    </tr>
+                    <tr>
+                        <td>Undefined</td>
+                        <td>Incluye variables declaradas pero no asignadas</td>
+                    </tr>
+                    <tr>
+                        <td>Object</td>
+                        <td>Para estructuras de datos complejas escritas con llaves</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="container">
+                <h3>¿En qué se diferencia de otros lenguajes de programación?</h3>
+                <br>
+                <p>JavaScript es uno de los lenguajes de programación más populares de todos por el hecho de que es tan versátil. <br><br>
+                    Muchos desarrolladores lo consideran su opción principal a menos que necesiten una función específica que JavaScript no proporciona.
+                </p>
+                <br>
+
+                <label for="lang">¿Cuál es tu lenguaje de programación favorito?</label>
+                <select name="options" id="lang" class="options">
+                    <option selected value="selccionar">Selecciona una opción</option>
+                    <option value="c#">C#</option>
+                    <option value="java">Java</option>
+                    <option value="js">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="ruby">Ruby</option>
+
+                </select>
+            </div>
+        </section>
+
+        <section class="section-use">
+            <div class="container">
+                <h1>Contacto</h1>
+                <form id="data">
+                    <fieldset>
+                        <legend>Datos</legend>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" required/>
+                      
+
+                        <label for="pais">Busca tu pais</label>
+                        <input type="text" list="paises" name="paises" id="pais">
+                        <datalist id="paises">
+                            <option value="Mexico"></option>
+                            <option value="Brasil"></option>
+                            <option value="Dinamarca"></option>
+                            <option value="España"></option>
+                            <option value="Peru"></option>
+                        </datalist>
+                        <br>
+                    </fieldset>
+
+                    <label for="tel">Telefono</label>
+                    <input type="number" id="tel">
+
+                    <label for="comment">Comentarios</label>
+                      <textarea name="comment" id="comment"></textarea>
+
+                    <button type="button" onclick="verificarCampos()">Enviar</button>
+
+                </form>
+
+                <dialog id="error">
+                    <p>Llene todos los campos</p>
+                    <button id="closeDialog">Aceptar</button>
+                </dialog>
+
+            </div>
+            <div class="container-template"></div>
+
+            <div>
+                <video class="video" controls src="img/js.mp4"></video>
+            </div>
+
+            <template id="template"> 
+
+                    <h3>Conceptos relacionados</h3>
+                    <br>
+                    <details>
+                        <summary>Programación Orientada a Objetos</summary>
+                        <p>Proceso de escribir instrucciones para que una computadora realice tareas específicas.</p>
+                    </details>
+                    <details>
+                        <summary>Página web</summary>
+                        <p>Documento electrónico que se encuentra en internet y que contiene información organizada.</p>
+                    </details>
+                    <details>
+                        <summary>HTML</summary>
+                        <p>Lenguaje de marcado que define la estructura y disposición de los contenidos.</p>
+                    </details>
+                    <details>
+                        <summary>CSS</summary>
+                        <p>Lenguaje de hojas de estilo en cascada y se utiliza para estilizar elementos escritos en un lenguaje de marcado.</p>
+                    </details>
+                    <img src="img/curioso.png" alt="imagen descriptiva de curioso">
+
+            </template>  
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy JavaScript</p>
+    </footer>
+    
+    <script>
+        const template = document.getElementById('template'); 
+        const clone = template.content.cloneNode(true);
+        const section = document.querySelector('.container-template')
+        //Agrega un hijo(nodo) al body
+        section.appendChild(clone);
+
+        function verificarCampos(){
+            const nombre = document.getElementById('nombre').value.trim();
+            const pais = document.getElementById('pais').value.trim();
+            const telefono = document.getElementById('tel').value.trim();
+            const comentario = document.getElementById('comment').value.trim();
+
+            const dialog = document.getElementById('error');
+            const btnClose = document.getElementById('closeDialog');
+
+
+            if(!nombre || !pais || !telefono || !comentario){
+                dialog.showModal();
+            }
+            else{
+                alert('Su información ha sido enviada')
+            }
+
+            btnClose.addEventListener("click", function() {
+                dialog.close();
+            });
+
+            document.getElementById('data').reset();
+        }
+
+    </script>
+</body>
+</html>
