@@ -1,0 +1,75 @@
+/*
+*{
+    margin: 0;
+}
+
+/* id 
+#title{
+    color: brown;
+}
+
+/* class 
+.bold{
+    font-weight: bold;
+}
+
+/* type 
+p{
+    color: blue;
+}
+
+/* pseudo class 
+p:hover{
+    color: green;
+}
+
+/* pseudo elementos: identica pequeñas secciones detro de una etiqueta 
+p::first-letter{
+    color: orange;
+    text-transform: uppercase;
+}
+
+/* Combinación de selectores tiene mas especificidad no respeta la cascada y se aplican estos estilos 
+p.bold{
+    font-weight: bold;
+    color: black;
+}
+/* Atttribute: Identiica cuando un elemento o una etiqueta tiene cierto valor en su etiqueta
+[class = "bold"] {
+    color: yellow;
+}
+*/
+
+/*combinadores >, ' ', + */
+/* > hijos directos */
+section > article > p{
+    color: red;
+} 
+
+/* ' ' descendientes */
+section p{
+    color: brown;
+}
+
+/* + hermanos  Buca al primer hermano que cumpla la regla y le aplica los estilos, si hubieran mas de 1 hermano que cumpla la regla solo se pinta el primero */
+h1 + p{
+    color: aqua;
+}
+
+
+
+
+
+
+/*
+    id cuano los estilos solo son para ese elemento
+    Clase cuano lo vna a compartir mas de 2 elementos
+    solo aun grupo reducido
+    tipo: los stulos se aplican a todos los elementos
+    Pseudo clases: Ayudan a detectar estados
+    part: identifica partes del codigo
+    Si 2 elementos tienen la misma especificidad o es la misma regla la csacda es la que define que regla se va a utilizar (elige la ultima que aparece)
+
+    em uni
+    rem define el tamañp de las cosas co respesto 
+*/

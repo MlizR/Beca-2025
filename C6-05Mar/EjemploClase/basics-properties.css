@@ -1,0 +1,77 @@
+html{
+    font-size: 20px;
+}
+body {
+    font-family:'Arial', serif;
+    background-image: url();
+    font-style: italic;
+     /* Grosor de la letra */
+    font-weight: lighter;
+    font-size: 1rem;
+    /* Fallback rules or values: Se utilizan cuando el navegador no soportta la propiedad */
+    background-color: rgb(0, 0, 255, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255 255, 1);
+    color: white;
+    
+}
+
+article{
+    font-size: 10px;
+    padding: 2rem;
+    border: 2px solid black; /* Propiedad de shorthand */
+    border-radius: 30px ;
+}
+
+/* inherir || initial || unset => Heredar valores(estilos) */
+
+/*Ajusta de forma horizontal el texto*/
+p{
+    padding: unset;
+    text-align: center;
+    /* Agrega espacio entre lineas*/
+    line-height: 2rem; 
+}
+
+#a{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    color: black;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 50% ;
+
+}
+
+#b{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin: 2rem 1rem; /* Propiedad shorthand: camino mas corto, pero podemos setear el valor para cada lado de la caja */
+
+    /*
+    display:block ocupa el Espacio disponoble de nuestro padre el 100% p lo tiene por defecto
+    display: inline-block Es similar al inline pero si le das valores en width y heigt si los respeta 
+    display: inline solo ocupa el esapcio de su contenido, si le colocas valor en width y heigth no aplica los estilos: previene el comportamiento de width y height span lo tiene por defecto */
+}
+span{
+    width: 200px;
+    height: 200px;
+    /*Lo oculta pero aun aparece en el dom*/
+    display: none;
+}
+
+
+/* Modelo de caja: cada etiquetas es representada por una caja 
+margin espacio a partir del borde a los demas elementos
+padding: esapcio entre el borde  y el contenido
+
+box-sizing
+Calcula el alto y ancho del el tamaño del elemento,  esta limitado por el borde
+
+content-box: comportaminto de css por defecto para el tamaño de la caja
+la caja mide menos(border-box) o mas (content-box)
+*/
