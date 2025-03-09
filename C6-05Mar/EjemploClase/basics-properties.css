@@ -22,6 +22,7 @@ article{
     padding: 2rem;
     border: 2px solid black; /* Propiedad de shorthand */
     border-radius: 30px ;
+    position: static; /* */
 }
 
 /* inherir || initial || unset => Heredar valores(estilos) */
@@ -34,6 +35,12 @@ p{
     line-height: 2rem; 
 }
 
+#parentA{
+    background-color: blue;
+    width: 100%;
+    height: 400px;
+}
+
 #a{
     background-color: aquamarine;
     width: 100px;
@@ -42,8 +49,15 @@ p{
     margin: 2rem;
     padding: 1rem;
     border-radius: 50% ;
-
+    position: relative; /*Pocisiona el elemnto conforme a su elemento padre*/
+    left: 100px; /*Se mueve 100px respecto al borde superior del lado derecho */
 }
+
+/*position
+ right:100px ; /* a la esquimna superior izquierda
+ top:200px; 
+ bottom: a la esquina superior izquierda de la caja azul
+*/
 
 #b{
     background-color: brown;
@@ -51,6 +65,17 @@ p{
     height: 100px;
     color: white;
     margin: 2rem 1rem; /* Propiedad shorthand: camino mas corto, pero podemos setear el valor para cada lado de la caja */
+    position: absolute; /*pocisiona el elemnto respecto a viewport */
+    top:200px;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+
+    /*Absoluto mientras se hace scrol respeta su pocisión se mantiene en la misma pocisión todo el tiempo
+    sticky Se queda fijo
+*/
+
+
 
     /*
     display:block ocupa el Espacio disponoble de nuestro padre el 100% p lo tiene por defecto
@@ -60,9 +85,24 @@ p{
 span{
     width: 200px;
     height: 200px;
-    /*Lo oculta pero aun aparece en el dom*/
-    display: none;
+    background-color: aliceblue;
+    /*Intenta respeta la posición fija*/
+    position: static;
+    top: 10px;
+    left: 10px;
 }
+
+/* */
+
+/* position: Nos ayuda a definir la pocisión de un elemento 
+lugar donde se va a pocisionar la pantalla 
+position: static; por defecto static lo tienen todos los elementos  (como se encuentran en el html se va a renderizar)
+position:
+top
+rigth
+left
+bottom
+*/
 
 
 /* Modelo de caja: cada etiquetas es representada por una caja 
@@ -74,4 +114,21 @@ Calcula el alto y ancho del el tamaño del elemento,  esta limitado por el borde
 
 content-box: comportaminto de css por defecto para el tamaño de la caja
 la caja mide menos(border-box) o mas (content-box)
+
+
+suba 10 pixeles cada vez que das clic en enter
 */
+
+.box{
+    position: absolute;
+    background-color: cadetblue;
+
+}
+/* la toma absoluta pero respecto a su padre */
+.container-box{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    
+}
