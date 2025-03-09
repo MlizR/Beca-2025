@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    gap: 2rem;
+    background-color: #f2f2f2;
+    margin-bottom: 2rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container{
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    border: 2px solid #4b4646;
+    border-radius: 1rem ;
+    padding: 20px;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.circle{
+    border-radius: 50%;
+    background-color: #4b4646;
+    width: 40px;
+    height: 40px;
+    margin: 0;   
+}
+
+a{
+    text-decoration: none;
+    background-color: #018fc7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.btn-flow{
+    text-align: center;
+
+}
+
+/* Ejercicio 2 - Cars */
+.container-E2{
+    color: #fff;
+    padding: 2rem;
+ }
+
+.btn-more{
+    background-color: #f2f2f2;
+    color: transparent;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+}
+
+.article-car{
+    padding: 4rem 2rem;
+
+}
+.article-car h1{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.article-car p{
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 2rem;
+}
+.article-car:nth-child(1){
+    background-color: #e38826;
+    border-radius: 0.5rem 0.5rem 0 0;
+        a{
+            color: #e38826;
+        }
+}
+
+.article-car:nth-child(2){
+    background-color: #006970;
+    a{
+        color: #006970;
+    }
+
+}
+.article-car:nth-child(3){
+    background-color: #004241;
+    border-radius: 0 0 0.5rem 0.5rem;
+    a{
+        color: #004241;
+    }
+}
+
+/* Ejercicio 4*/
+.container-E4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+   
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin: 2rem;
+}
+
+.text h3{
+    padding: 1rem 2rem;
+    color: #48556a;
+}
+.text p{
+    padding: 1rem 2rem;
+    color: #6d7f97;
+}
+
+.container-article img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.biography{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.biography img{
+    border-radius: 50%;
+    width: 5rem;
+}
+.biography h3{
+    padding-bottom: 0;
+}
+.biography p{
+    padding-top: 0;
+}
+.circle-4{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+
+.circle-4 img{
+    width: 100%;
+    
+}
+
+
+@media(min-width: 1024px){
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ejercicio 2 - Cars */
+    .container-E2{
+        display: flex;
+        width: 70%;  
+    }
+    .article-car:nth-child(1){
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .article-car:nth-child(3){
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    /* Ejercicio 4 - Etiquetas semanticas */
+    .container-E4{
+        width: 70%;
+        height: auto;
+        border-radius: 0 0.5rem 0.5rem 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+    .container-article{
+        display: flex; 
+        height: 100%;
+    }
+    .text{
+        box-sizing: border-box;
+     width: 60%;
+        
+    }
+    .container-article img{
+        width: 40%;
+        height: 100%;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .biography{
+        margin: 0;
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+
+    }
+    .biography img{
+        border-radius: 50%;
+        width: 5rem;
+
+    }
+    .circle-4{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #f2f2f2;
+        padding: 1rem;
+    }
+    
+    .circle-4 img{
+        width: 100%;
+        
+    }
+
+
+
+}

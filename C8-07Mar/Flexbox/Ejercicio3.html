@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <title>Flexbox</title>
+    <style>
+      html{
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+      body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+      a{
+          text-decoration: none;
+          background-color: #018fc7;
+          padding: 0.5rem 1rem;
+          border-radius: 0.5rem;
+          color: #fff;
+      }
+      .container-tags{
+        width: 60%;
+        height: 70%;
+        border: 2px solid #818081;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: #fff;
+        text-align: center;
+
+        
+      }
+      .container-box{
+        text-align: center;
+        display: flex;
+        flex: 1;
+        gap: 0.5rem;
+      }
+      .container-left{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        flex: 0.3;
+      }
+
+      header{
+        background-color: #818081;
+        height: 4rem;
+        border-radius: 0.5rem;
+      }
+     
+      nav{
+        background-color: #7492bf;
+        flex: 1;
+        border-radius: 0.5rem;
+
+      }
+      aside{
+        background-color: #fd8384;
+        border-radius: 0.5rem;
+        height: 7rem;
+      }
+      main{
+        background-color: #fbc82d;
+        border-radius: 0.5rem;
+        flex: 1;
+      }
+      footer{
+        background-color: #c9c0e6;
+        height: 4em;
+        border-radius: 0.5rem;
+
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <section class="container-tags">
+      <header><p>header</p></header>
+
+      <section class="container-box">
+        <section class="container-left">
+          <nav><p>nav</p></nav>
+          <aside><p>article</p></aside>
+        </section>
+        <main><p>main</p></main>
+      </section>
+
+      <footer><p>footer</p></footer>
+    </section>
+      
+    <section>
+        <a href="Ejercicio2.html">Regresar</a>
+        <a href="Ejercicio4.html">Siguiente</a>
+    </section>
+  </body>
+</html>

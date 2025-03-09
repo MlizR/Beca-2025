@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;;
+}
+
+body{
+    background-color: #0d192b;
+    padding: 3rem; 
+    color: #fff;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #14253d;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+}
+.container > p, .creditos > p{
+    color: #a4a7ab;
+}
+
+.caratula{
+    width: 100%;
+    height: 22rem;
+    background-image: url(img/image-equilibrium.jpg);
+    background-position: center;
+    border-radius: 1rem;
+    position: relative
+}
+.caratula img{
+    display: none;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info p:nth-child(1){
+    color: #00fff7;
+}
+.info p:nth-child(2){
+    color: #a4a7ab;
+}
+
+.creditos{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #2f415b;
+    padding-top: 1rem;
+}
+
+.creditos img{
+    border-radius: 50%;
+    width: 3rem;
+    border: 1px solid #fff;
+}
+
+span{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #2f415b;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+@media ( min-width: 1024px){
+    .container{
+        width: 30%;
+    }
+    .caratula::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 255, 247, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .caratula:hover::after{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .caratula:hover img{
+        display: block;
+    }
+
+    
+    .caratula{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    span:hover, h1:hover{
+        cursor: pointer;
+        color: #00fff7;
+    }
+
+
+
+
+
+}
