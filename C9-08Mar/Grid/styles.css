@@ -1,0 +1,23 @@
+/* grid es bidimencional (filas y columnas) y flex es unidimencional */ 
+.container{
+    display: grid;
+    background-color: brown;
+    /* Establece el tamaño de cada una de las columnas */
+    grid-template-columns: repeat(4, 200px); /* repeat() repite un valor el numero de veces que le indiques */
+    grid-template-rows: 50px 100px 100px 100px;
+    /*justify-items: center; Acomoda los items dentro de cada columna de forma vertical*/
+    justify-content: center ;
+    /* align-items: center;  Acomoda el contenido de manrera vertical */
+   
+}
+
+.item{
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+.container :first-child{
+    /* De donde a donde va abarcar un item*/
+    grid-column: 1/3; /*La columna 1 y 2*/
+    grid-row: 2/4; /*la fila 2 y 3*/
+}
