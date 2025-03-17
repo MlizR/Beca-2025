@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Arreglos y Objetos</title>
+</head>
+<body>
+    <h2>Registro de Citas</h2>
+    <form>
+        <label for="date">Fecha</label>
+        <input type="date" id="date">
+        <label for="name">Paciente</label>
+        <input type="text" id="name">
+        <label for="dr">Doctor</label>
+        <input type="text" id="dr">
+
+        <button type="button" onclick="registrarCita()">Registrar</button>
+    </form>
+
+    <br><br>
+
+    <h2>Registro de Libros</h2>
+    <form>
+        <label for="title">Título</label>
+        <input type="text" id="title">
+        <label for="aut">Autor</label>
+        <input type="text" id="aut">
+
+        <label for="state">Estado</label>
+        <select name="estado" id="state">
+            <option value="Prestado">Prestado</option>
+            <option value="Disponible">Disponible</option>
+        </select>
+
+        <button type="button" onclick="registrarLibro()">Registrar</button>
+    </form>
+
+    <br><br>
+    <h2>Catálogo de productos</h2>
+    <label for="buscar">Buscar producto</label>
+    <input type="text" id="buscar">
+
+    <button type="button" onclick="buscarNombreProducto()">Buscar</button>
+    <br><br>
+
+    <h2>Registro de asistencias en clase</h2>
+    <label for="nameA">Nombre del alumno</label>
+    <input type="text" id="nameA">
+    <label for="opciones">Elija una opción</label>
+    <select name="nombreAlumno" id="opciones">
+        <option value="Presente">Presente</option>
+        <option value="ausente">Ausente</option>
+    </select>
+    <button type="button" onclick="registrarAsistencia()">Registrar</button>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
