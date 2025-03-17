@@ -1,0 +1,55 @@
+/*Se basa en el contenedor y los items
+El navegador le asigna valores a ciertas 
+El padre define la dirección 
+
+
+space-between: les
+space-around: les da prioridad al espacio que hay entre lso elementos y el resto lo calcula y lo deja a la orilla
+space-evenly: distribuidos de forma uniforme
+
+calcula el espacio que hay entre los elementos y alrededor de ellos
+Se acomodan automaticamente
+
+flexbox: se utiliza para trabajar con un solo eje (unidimencional)
+grid: taraba en columnas y filas(dimensional)
+
+*/
+html{
+    font-size: 20px;
+}
+
+.box{
+    background-color: black;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    margin-bottom: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: row; /* row: Cambia de eje y toma el eje horizontal como principal column: eje vertical*/
+    justify-content: start; /*Alineación respecto al eje principal*/
+    align-items: start; 
+    /*stretch: Calcula el tamaño del contenedor y estilas los elementos*/
+    gap: 50%;
+    flex-wrap: wrap; /* nowrap, wrap, wrap-reverse*/
+    width: 100%;
+    height: 500px;
+    background-color:#a9a8a8;
+}
+
+.container *{
+    background-color: green;
+}
+
+#item1{
+    flex-grow: 2;
+    align-self: stretch;
+
+}
+
+#item2{
+    flex-grow: 1;
+
+}
