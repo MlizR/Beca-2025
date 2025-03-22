@@ -1,0 +1,25 @@
+{
+  "name": "imagescarousel",
+  "version": "1.0.0",
+  "description": "Web component to show an image carousel",
+  "keywords": [
+    "web",
+    "component",
+    "html",
+    "css",
+    "lit"
+  ],
+  "license": "ISC",
+  "author": "lizette.melendez@gmail.com",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  },
+  "dependencies": {
+    "lit": "^3.2.1"
+  }
+}
