@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+  </head>
+  <body>
+    <template id="tpl">
+      <button>Click me</button>
+    </template>
+    <template id="tpl-carousel">
+      <section class="container">
+        <img />
+        <section>
+          <button id="left"><</button>
+          <button id="right">></button>
+        </section>
+      </section>
+    </template>
+
+    <my-button color="red"></my-button>
+    <my-button color="gray"></my-button>
+    <my-button color="chocolate"></my-button>
+    <my-button color="red" id="last"></my-button>
+    <br />
+    <br />
+    <image-carousel width="500px" height="300px"
+      images='[
+        "https://cdn.shopify.com/s/files/1/0272/1392/2339/files/imagenes-blog-04.jpg?v=1687428377",
+        "https://www.cronista.com/files/image/1087/1087474/67b8c99d1bed2.jpg",
+        "https://www.florespedia.com/Imagenes/flores-bonitas.jpg"]'
+    >
+    </image-carousel>
+
+    <image-carousel width="250px" height="150px"
+      images='[
+        "https://cdn.shopify.com/s/files/1/0272/1392/2339/files/imagenes-blog-04.jpg?v=1687428377",
+        "https://www.cronista.com/files/image/1087/1087474/67b8c99d1bed2.jpg",
+        "https://www.florespedia.com/Imagenes/flores-bonitas.jpg"]'
+    >
+    </image-carousel>
+
+    <image-carousel
+      images='[
+        "https://cdn.shopify.com/s/files/1/0272/1392/2339/files/imagenes-blog-04.jpg?v=1687428377",
+        "https://www.cronista.com/files/image/1087/1087474/67b8c99d1bed2.jpg",
+        "https://www.florespedia.com/Imagenes/flores-bonitas.jpg"]'
+    >
+    </image-carousel>
+    <script type="module" src="main.js"></script>
+    <script>
+      const lastButton = document.getElementById("last");
+      lastButton.setAttribute("color", "yellow");
+    </script>
+  </body>
+</html>
