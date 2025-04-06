@@ -87,7 +87,7 @@ console.log(strings);
 //Asignar un valor a un parametro por defecto
 //Los vcalores que ponemos como argumentos son expresiones.
 //Asincronia: promesas: es un objeto 
-//AJAS: Se encarga de hacer peticiones, se necraga de mandar la requests
+//AJAX: Se encarga de hacer peticiones, se necraga de mandar la requests
 //calbach hell función dentro de una función dentro de otra función
 //Fificulta la lectrura del codigo
 //calback función que tinene como argumento otra función

@@ -74,7 +74,7 @@ Promise.allSettled([p4, p5, p6])
 
 
 //Promise.any()
-const error1 = Promise.reject('Error 1');
+const error1 = Promise.resolve('Exito 1');
 const error2 = Promise.reject('Error 2');
 const error3 = Promise.reject('Error 3');
 //const exito = Promise.resolve('Cumplida');

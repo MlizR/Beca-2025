@@ -1,0 +1,26 @@
+Estructura básica de un Web Component en Lis
+
+import { LitElement } from "lit";
+
+export class Card extends LitElement {
+    constructor() {
+        super();
+        //inicializar el valor por defecto de las props
+
+    }
+
+    //Propiedades que van a ser observadas (cambios)
+    static properties = {
+
+    }
+
+    static styles = css `
+    `;
+
+    //Se renderiza en el shadow DOM
+    render() {
+        return html = `
+        `;
+    }
+
+}
